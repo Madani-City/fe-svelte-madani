@@ -9,7 +9,7 @@
 	}
  </script>
 <div class="h-[100vh] grid place-items-center">
-	<nav class="top-0 bg-[#2b2b2b] w-full font-montserrat fixed">
+	<nav class="top-0 bg-[#2b2b2b] w-full font-montserrat fixed z-10">
 		<div class="mx-14">
 		  <div class="flex items-center justify-between h-20">
 			<div class="flex-shrink-0">

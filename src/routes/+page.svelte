@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
 </script>
-<div class="font-bold text-[#FFF7DA] font-montserrat -z-10 landscape:mt-12">
+<div class="font-bold text-[#FFF7DA] font-montserrat landscape:mt-12">
     <div class="main flex flex-col mx-auto items-center justify-center">
         <video autoplay loop muted preload="auto" class="w-[45%] h-2/3 max-:hidden mix-blend-lighten">
           <source src="src/assets/video/welkam madani 2d vp10.webm" type="video/webm">
