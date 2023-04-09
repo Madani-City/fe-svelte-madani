@@ -8,43 +8,45 @@
 		showMenu = !showMenu;
 	}
  </script>
-  
-  <nav class="top-0 bg-[#2b2b2b] w-full">
-	<div class="mx-14">
-	  <div class="flex items-center justify-between h-20">
-		<div class="flex-shrink-0">
-		  <a href="/" class="text-white text-2xl font-bold">Logo</a>
-		</div>
-		<button class="block md:hidden text-white focus:outline-none" on:click={toggleMenu}>
-		  <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-			{#if showMenu}
-			  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.293 4.707a1 1 0 010 1.414l-14 14a1 1 0 01-1.414-1.414l14-14a1 1 0 011.414 0z" />
-			  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.707 4.707a1 1 0 000 1.414l14 14a1 1 0 001.414-1.414l-14-14a1 1 0 00-1.414 0z" />
-			{:else}
-			  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
-			{/if}
-		  </svg>
-		</button>
-		<div class="hidden md:block">
-		  <div class="ml-10 flex items-baseline space-x-4 text-xl text-[#FFF7DA]">
-			<a href="/" class="hover:text-white px-3 py-2 rounded-md font-medium">Home</a>
-			<a href="/about" class="hover:text-white px-3 py-2 rounded-md font-medium">About</a>
-			<a href="/activity" class="hover:text-white px-3 py-2 rounded-md font-medium">Activity</a>
-			<a href="/social-media" class="hover:text-white px-3 py-2 rounded-md font-medium">Social Media</a>
+<div class="h-[100vh] grid place-items-center">
+	<nav class="top-0 bg-[#2b2b2b] w-full font-montserrat fixed">
+		<div class="mx-14">
+		  <div class="flex items-center justify-between h-20">
+			<div class="flex-shrink-0">
+			  <a href="/" class="text-white text-2xl font-bold"><img src="src/assets/logo/Logo_Madani.png" alt="logo" class="w-[15vw]"></a>
+			</div>
+			<button class="block md:hidden text-white focus:outline-none" on:click={toggleMenu}>
+			  <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+				{#if showMenu}
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.293 4.707a1 1 0 010 1.414l-14 14a1 1 0 01-1.414-1.414l14-14a1 1 0 011.414 0z" />
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.707 4.707a1 1 0 000 1.414l14 14a1 1 0 001.414-1.414l-14-14a1 1 0 00-1.414 0z" />
+				{:else}
+				  <path fill-rule="evenodd" clip-rule="evenodd" d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm0 5h16v2H4v-2z" />
+				{/if}
+			  </svg>
+			</button>
+			<div class="hidden md:block">
+			  <div class="ml-10 flex items-baseline space-x-4 text-xl text-[#FFF7DA]">
+				<a href="/" class="hover:text-white px-3 py-2 rounded-md font-medium">Home</a>
+				<a href="/about" class="hover:text-white px-3 py-2 rounded-md font-medium">About</a>
+				<a href="/activity" class="hover:text-white px-3 py-2 rounded-md font-medium">Activity</a>
+				<a href="/social-media" class="hover:text-white px-3 py-2 rounded-md font-medium">Social Media</a>
+			  </div>
+			</div>
 		  </div>
 		</div>
-	  </div>
-	</div>
-	{#if showMenu}
-	<div transition:slide class="md:hidden absolute top-20 w-full bg-[#2b2b2b]">
-	  <div class="flex flex-col items-start py-4 px-4 text-[#FFF7DA]">
-		<a href="/" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Home</a>
-		<a href="/about" class="hover:text-white text-xl py-2" on:click={toggleMenu}>About</a>
-		<a href="/activity" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Activity</a>
-		<a href="/social-media" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Social Media</a>
-	  </div>
-	</div>
-	{/if}
-  </nav>
+		{#if showMenu}
+		<div transition:slide class="md:hidden absolute top-20 w-full bg-[#2b2b2b]">
+		  <div class="flex flex-col items-start py-4 px-4 text-[#FFF7DA]">
+			<a href="/" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Home</a>
+			<a href="/about" class="hover:text-white text-xl py-2" on:click={toggleMenu}>About</a>
+			<a href="/activity" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Activity</a>
+			<a href="/social-media" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Social Media</a>
+		  </div>
+		</div>
+		{/if}
+	  </nav>
+	<slot />
+</div>
+
   
-<slot />
