@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+  
+.swiper-button-next {
+    background-image: url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg") !important;
+  }
