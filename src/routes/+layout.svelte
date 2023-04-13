@@ -9,7 +9,7 @@
 		showMenu = !showMenu;
 	}
  </script>
-<div class="h-[100vh]">
+<div class="h-[100vh] content-div">
 	<nav class="top-0 bg-[#2b2b2b] w-full font-montserrat fixed z-10">
 		<div class="mx-14">
 		  <div class="flex items-center justify-between h-20">
@@ -29,9 +29,9 @@
 			<div class="hidden md:block">
 			  <div class="ml-10 flex items-baseline space-x-4 text-xl text-[#FFF7DA]">
 				<a href="/" class="hover:text-white px-3 py-2 rounded-md font-medium">Home</a>
-				<a href="/about" class="hover:text-white px-3 py-2 rounded-md font-medium">About</a>
-				<a href="/activity" class="hover:text-white px-3 py-2 rounded-md font-medium">Activity</a>
-				<a href="/social-media" class="hover:text-white px-3 py-2 rounded-md font-medium">Social Media</a>
+				<a href="#about" class="hover:text-white px-3 py-2 rounded-md font-medium">About</a>
+				<a href="#activity" class="hover:text-white px-3 py-2 rounded-md font-medium">Activity</a>
+				<a href="#social-media" class="hover:text-white px-3 py-2 rounded-md font-medium">Social Media</a>
 			  </div>
 			</div>
 		  </div>
@@ -40,14 +40,15 @@
 		<div transition:slide class="md:hidden absolute top-20 w-full bg-[#2b2b2b]">
 		  <div class="flex flex-col items-start py-4 px-4 text-[#FFF7DA]">
 			<a href="/" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Home</a>
-			<a href="/about" class="hover:text-white text-xl py-2" on:click={toggleMenu}>About</a>
-			<a href="/activity" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Activity</a>
-			<a href="/social-media" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Social Media</a>
+			<a href="#about" class="hover:text-white text-xl py-2" on:click={toggleMenu}>About</a>
+			<a href="#activity" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Activity</a>
+			<a href="#social-media" class="hover:text-white text-xl py-2" on:click={toggleMenu}>Social Media</a>
 		  </div>
 		</div>
 		{/if}
 	  </nav>
 	<slot />
 </div>
+
 
   

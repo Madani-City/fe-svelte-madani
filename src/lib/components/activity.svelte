@@ -101,7 +101,7 @@
     
     
 </script>
-    <div class="slider h-screen grid place-items-center max-sm:hidden" bind:this={root}>
+    <div class="slider h-screen grid place-items-center" bind:this={root}>
         
         <swiper-container speed="1000">
         {#if browser}
@@ -114,11 +114,11 @@
     </swiper-container>
        
     </div>
-    <div class="max-sm:flex flex-col mt-16 justify-center items-center gap-8 sm:hidden">
+    <!-- <div class="max-sm:flex flex-col mt-16 justify-center items-center gap-8 sm:hidden">
         {#each gambarEvent as {src,alt}}
              <img src={src} alt={alt} class="object-cover rounded-md h-1/2 w-1/2" draggable="false" loading="lazy"/>
         {/each}
-    </div>
+    </div> -->
     <!-- loop gambar event -->
 <style>
     swiper-container {

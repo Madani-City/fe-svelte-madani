@@ -4,10 +4,13 @@
 <script>
   import video_webm from '$lib/assets/video/welkam madani 2d vp10.webm';
   import video_mp4 from '$lib/assets/video/welkam_madani_2d.mp4';
+  import About from '$lib/components/about.svelte';
+  import Activity from '$lib/components/activity.svelte';
+  import SocialMedia from '$lib/components/socialmedia.svelte';
 </script>
-<div class="font-bold text-[#FFF7DA] font-montserrat landscape:pt-12 h-full grid place-items-center">
-    <div class="main flex flex-col mx-auto items-center justify-center">
-        <video autoplay loop muted preload="auto" class="w-[45%] h-2/3 max-:hidden mix-blend-lighten aspect-video">
+<div class="font-bold text-[#FFF7DA] font-montserrat h-full grid place-items-center snap-y snap-mandatory overflow-y-auto content-div">
+    <div class="main flex flex-col mx-auto items-center justify-center h-screen snap-center">
+        <video autoplay loop muted preload="auto" class="w-[45%] max-:hidden mix-blend-lighten aspect-video">
           <source src={video_webm} type="video/webm">
           <source src={video_mp4} type="video/mp4">
           <track kind="captions" srclang="en" label="English" default>
@@ -21,9 +24,20 @@
           GABUNG SEKARANG
         </a>
     </div>
+    <section id="about" class="h-screen snap-center">
+      <About />
+    </section>
+    <section id="activity" class="h-screen snap-center">
+      <Activity />
+    </section>
+    <section id="social-media" class="h-screen snap-center">
+      <SocialMedia />
+    </section>
 </div>
 
 <style>
-  /* animation */
+	.content-div::-webkit-scrollbar {
+		display: none;
+	}
 </style>
 

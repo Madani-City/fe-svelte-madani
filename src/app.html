@@ -22,6 +22,14 @@
 
 		%sveltekit.head%
 	</head>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		html::-webkit-scrollbar {
+			display: none;
+		}
+	</style>
 	<body data-sveltekit-preload-data="hover" class="bg-[#202020] whitespace-nowrap">
 		<div style="display: contents; box-sizing: border-box">%sveltekit.body%</div>
 	</body>
