@@ -14,9 +14,9 @@
 		<div class="mx-14">
 		  <div class="flex items-center justify-between h-20">
 			<div class="flex-shrink-0">
-			  <a href="/" class="text-white text-2xl font-bold"><img src={logo_madani} alt="logo" class="w-[15vw]"></a>
+			  <a href="/" class="text-white text-2xl font-bold"><img src={logo_madani} alt="logo" class="min-[2000px]:w-80 xl:w-64 lg:w-52 md:w-40 sm:w-36 w-32 aspect-auto	" width="512px" height="437px"></a>
 			</div>
-			<button class="block md:hidden text-white focus:outline-none" on:click={toggleMenu}>
+			<button class="block md:hidden text-white focus:outline-none" on:click={toggleMenu} aria-label="nav-toggle" id="nav-toggle" title="nav-toggle">
 			  <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 				{#if showMenu}
 				  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.293 4.707a1 1 0 010 1.414l-14 14a1 1 0 01-1.414-1.414l14-14a1 1 0 011.414 0z" />
