@@ -7,7 +7,7 @@
 </script>
 <div class="font-bold text-[#FFF7DA] font-montserrat landscape:pt-12 h-full grid place-items-center">
     <div class="main flex flex-col mx-auto items-center justify-center">
-        <video autoplay loop muted preload="auto" class="w-[45%] h-2/3 max-:hidden mix-blend-lighten">
+        <video autoplay loop muted preload="auto" class="w-[45%] h-2/3 max-:hidden mix-blend-lighten aspect-video">
           <source src={video_webm} type="video/webm">
           <source src={video_mp4} type="video/mp4">
           <track kind="captions" srclang="en" label="English" default>
