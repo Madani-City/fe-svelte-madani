@@ -2,12 +2,14 @@
 	<title>Home</title>
 </svelte:head>
 <script>
+  import video_webm from '$lib/assets/video/welkam madani 2d vp10.webm';
+  import video_mp4 from '$lib/assets/video/welkam_madani_2d.mp4';
 </script>
 <div class="font-bold text-[#FFF7DA] font-montserrat landscape:pt-12 h-full grid place-items-center">
     <div class="main flex flex-col mx-auto items-center justify-center">
         <video autoplay loop muted preload="auto" class="w-[45%] h-2/3 max-:hidden mix-blend-lighten">
-          <source src="src/assets/video/welkam madani 2d vp10.webm" type="video/webm">
-          <source src="src/assets/video/welkam_madani_2d.mp4" type="video/mp4">
+          <source src={video_webm} type="video/webm">
+          <source src={video_mp4} type="video/mp4">
           <track kind="captions" srclang="en" label="English" default>
         </video>
         <div class="md:text-3xl xl:text-5xl sm:text-xl min-[2400px]:text-9xl max-[360px]:text-xs">KOMUNITAS GAMERS MUSLIM INDONESIA</div>

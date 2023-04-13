@@ -1,9 +1,13 @@
 <script>
+    import riscoaditama from '$lib/assets/sosmed/riscoaditama.jpg';
+    import warga_madani from '$lib/assets/sosmed/warga_madani.jpg';
+    import akhwat_madani from '$lib/assets/sosmed/akhwat_madani.jpg';
+    import risco_aditama from '$lib/assets/sosmed/risco_aditama.jpg';
     const sosmed = [
-        {url: 'https://www.instagram.com/riscoaditama/', icon: '/src/assets/sosmed/riscoaditama.jpg', tag: '@riscoaditama', text_color: '#FFF7DA'},
-        {url: 'https://www.instagram.com/warga_madani/', icon: '/src/assets/sosmed/warga_madani.jpg', tag: '@warga_madani', text_color: '#FCCD25'},
-        {url: 'https://www.instagram.com/akhwat_madani/', icon: '/src/assets/sosmed/akhwat_madani.jpg', tag: '@akhwat_madani', text_color: '#F3C5C7'},
-        {url: 'https://www.youtube.com/@riscoaditama', icon: '/src/assets/sosmed/risco_aditama.jpg', tag: 'risco aditama', text_color: '#FFF7DA'},
+        {url: 'https://www.instagram.com/riscoaditama/', icon: riscoaditama, tag: '@riscoaditama', text_color: '#FFF7DA'},
+        {url: 'https://www.instagram.com/warga_madani/', icon: warga_madani, tag: '@warga_madani', text_color: '#FCCD25'},
+        {url: 'https://www.instagram.com/akhwat_madani/', icon: akhwat_madani, tag: '@akhwat_madani', text_color: '#F3C5C7'},
+        {url: 'https://www.youtube.com/@riscoaditama', icon: risco_aditama, tag: 'risco aditama', text_color: '#FFF7DA'},
     ]
 </script>
 
