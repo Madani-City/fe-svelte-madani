@@ -11,16 +11,13 @@
         About
       </div>
 </div> -->
-<main class="text-3xl font-bold bg-[#202020] min-h-screen text-[#FFF7DA] overflow-hidden h-screen">
-  <div class="outer flex justify-center items-center h-[80%]">
-    <div class="text-container max-w-3xl">
-      <h1 class="font-montserrat text-[2.5rem] font-bold uppercase text-[#FFF0BC] drop-shadow-[0_0_35px_#FCCD25]">
+<main class="text-3xl font-bold bg-[#202020] text-[#FFF7DA] grid place-items-center h-full max-lg:mx-9">
+    <div class="max-w-3xl">
+      <h1 class="font-montserrat text-xl md:text-3xl xl:text-4xl font-bold uppercase text-[#FFF0BC] drop-shadow-[0_0_35px_#FCCD25]">
         kota madani
       </h1>
-      <p class="font-montserrat font-semibold text-xl mt-6">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat minus, deleniti sit reprehenderit suscipit aspernatur quia fugit necessitatibus! Temporibus consequatur vel, consequuntur aut facere exercitationem eos modi id, cumque numquam ipsam voluptatum magnam nesciunt! Temporibus.
-      </p>
-  
-    </div>
+      <div class="font-montserrat font-semibold text-base md:text-xl mt-6 whitespace-normal">
+        Kota Madani adalah komunitas game yang dibentuk sebagai wadah untuk menciptakan lingkungan  damai dan menyenangkan bagi gamers sekaligus sebagai tempat yang mendukung keberlangsungan aktivitas positif dan dibangun sebagai ruang untuk tumbuh bersama menjadi lebih baik.
+      </div>
   </div>
 </main>
