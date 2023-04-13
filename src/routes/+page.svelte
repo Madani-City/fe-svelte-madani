@@ -12,7 +12,12 @@
         </video>
         <div class="md:text-3xl xl:text-5xl sm:text-xl min-[2400px]:text-9xl max-[360px]:text-xs">KOMUNITAS GAMERS MUSLIM INDONESIA</div>
         <div class="text-[#FCCD25] mt-2 min-[350px]:text-sm md:text-xl min-[2400px]:text-5xl text-xs">KUY GABUNG, JADI BAGIAN KOTA MADANI</div>
-        <a href="https://discord.gg/VbGZ8yvhKw" class="bg-[#FCCD25] mt-10 py-5 px-6 text-[#202020] min-[2400px]:text-7xl md:text-xl text-sm font-bold">GABUNG SEKARANG</a>
+        <a 
+          href="https://discord.gg/VbGZ8yvhKw" 
+          target="_blank" 
+          class="bg-[#FCCD25] hover:bg-[#E0B722] mt-10 py-5 px-6 text-[#202020] min-[2400px]:text-7xl md:text-xl text-sm font-bold">
+          GABUNG SEKARANG
+        </a>
     </div>
 </div>
 
