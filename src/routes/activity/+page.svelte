@@ -2,6 +2,16 @@
     import {onMount} from 'svelte';
     import { browser } from '$app/environment';
     import { SwiperSlide, register } from 'swiper/element/bundle';
+    import image from '$lib/assets/gambar/events/gambar (1).png';
+    import image2 from '$lib/assets/gambar/events/gambar (2).png';
+    import image3 from '$lib/assets/gambar/events/gambar (3).jpg';
+    import image4 from '$lib/assets/gambar/events/gambar (4).jpg';
+    import image5 from '$lib/assets/gambar/events/gambar (5).jpg';
+    import image6 from '$lib/assets/gambar/events/gambar (6).png';
+    import image7 from '$lib/assets/gambar/events/gambar (7).png';
+    import image8 from '$lib/assets/gambar/events/gambar (8).png';
+    import image9 from '$lib/assets/gambar/events/gambar (9).jpg';
+    import image10 from '$lib/assets/gambar/events/gambar (10).png';
     register();
     let root;
     onMount(() => {
@@ -47,46 +57,47 @@
     
     const gambarEvent = [
         {
-            src: '/src/assets/gambar/events/gambar (1).png',
+            src: image,
             alt: 'gambar (1)'
         },
         {
-            src: '/src/assets/gambar/events/gambar (2).png',
+            src: image2,
             alt: 'gambar (2)'
         },
         {
-            src: '/src/assets/gambar/events/gambar (3).jpg',
+            src: image3,
             alt: 'gambar (3)'
         },
         {
-            src: '/src/assets/gambar/events/gambar (4).jpg',
+            src: image4,
             alt: 'gambar (4)'
         },
         {
-            src: '/src/assets/gambar/events/gambar (5).jpg',
+            src: image5,
             alt: 'gambar (5)'
         },
         {
-            src: '/src/assets/gambar/events/gambar (6).png',
+            src: image6,
             alt: 'gambar (6)'
         },
         {
-            src: '/src/assets/gambar/events/gambar (7).png',
+            src: image7,
             alt: 'gambar (7)'
         },
         {
-            src: '/src/assets/gambar/events/gambar (8).png',
+            src: image8,
             alt: 'gambar (8)'
         },
         {
-            src: '/src/assets/gambar/events/gambar (9).jpg',
+            src: image9,
             alt: 'gambar (9)'
         },
         {
-            src: '/src/assets/gambar/events/gambar (10).png',
+            src: image10,
             alt: 'gambar (10)'
         }
     ];
+    
     
     
 </script>

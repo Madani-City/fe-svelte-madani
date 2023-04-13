@@ -1,5 +1,6 @@
 
 <script>
+	import logo_madani from '$lib/assets/logo/Logo_Madani.png';
 	import { fade, slide } from 'svelte/transition';
 	import '../app.css';
 	let showMenu = false;
@@ -13,7 +14,7 @@
 		<div class="mx-14">
 		  <div class="flex items-center justify-between h-20">
 			<div class="flex-shrink-0">
-			  <a href="/" class="text-white text-2xl font-bold"><img src="src/assets/logo/Logo_Madani.png" alt="logo" class="w-[15vw]"></a>
+			  <a href="/" class="text-white text-2xl font-bold"><img src={logo_madani} alt="logo" class="w-[15vw]"></a>
 			</div>
 			<button class="block md:hidden text-white focus:outline-none" on:click={toggleMenu}>
 			  <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
