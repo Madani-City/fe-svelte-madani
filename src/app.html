@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<!-- <link rel="icon" href="%sveltekit.assets%/favicon.png" /> -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
 		<link
@@ -17,11 +18,18 @@
 		/>
 		<meta name="keywords" content="kota-madani, madani, discord madani, muslim gamers, gamer" />
 		<meta name="author" content="kota Madani" />
-		<style>
-		</style>
+		<style></style>
 
 		%sveltekit.head%
 	</head>
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		html::-webkit-scrollbar {
+			display: none;
+		}
+	</style>
 	<body data-sveltekit-preload-data="hover" class="bg-[#202020] whitespace-nowrap">
 		<div style="display: contents; box-sizing: border-box">%sveltekit.body%</div>
 	</body>
