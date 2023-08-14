@@ -15,7 +15,6 @@
     register();
     let root;
     onMount(() => {
-        console.log(root.querySelector('swiper-container'));
         const swiperEl = root.querySelector('swiper-container');
 
         const swiperParams = {

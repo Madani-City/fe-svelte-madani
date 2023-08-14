@@ -11,7 +11,12 @@ export default {
     extend: {
       fontFamily: {
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
-      }
+        barlow: ['Barlow', 'sans-serif'],
+        barlowsemi: ['"Barlow Semi Condensed"'],
+      },
+      colors: {
+        primary: '#FCCD25',
+      },
     },
   },
   plugins: [],
