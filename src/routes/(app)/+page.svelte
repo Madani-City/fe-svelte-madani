@@ -11,11 +11,11 @@
     <section>
       <div class="main flex flex-col mx-auto items-center justify-center h-screen snap-center font-bold text-[#FFF7DA]">
           <video autoplay loop muted preload="auto" class="w-[45%] max-:hidden mix-blend-lighten aspect-video">
-            <source src={video_webm} type="video/webm">
             <source src={video_mp4} type="video/mp4">
+            <source src={video_webm} type="video/webm">
             <track kind="captions" srclang="en" label="English" default>
           </video>
-          <div class="md:text-3xl xl:text-5xl sm:text-xl min-[2400px]:text-9xl max-[360px]:text-xs">KOMUNITAS GAMERS MUSLIM INDONESIA</div>
+          <div class="md:text-3xl xl:text-5xl sm:text-xl min-[2400px]:text-9xl max-[360px]:text-xs">GAK SEKEDAR MAIN GAME</div>
           <div class="text-[#FCCD25] mt-2 min-[350px]:text-sm md:text-xl min-[2400px]:text-5xl text-xs">KUY GABUNG, JADI BAGIAN KOTA MADANI</div>
           <a
             href="https://discord.gg/VbGZ8yvhKw"
