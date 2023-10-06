@@ -4,13 +4,8 @@
 
 <!-- Script -->
 <script>
-	import { onMount } from "svelte";
-
-
-const serverId = '859707595191484418'
-const clientId = '1159736344159989760'; // ID Aplikasi Discord Anda
-const redirectUri = 'http://127.0.0.1:5173/login'; // URI Pengalihan Anda
-const discordOAuthUrl = 'https://discord.com/api/oauth2/authorize?client_id=1159736344159989760&redirect_uri=http%3A%2F%2F127.0.0.1%3A5173%2Flogin&response_type=token&scope=guilds%20identify%20email'
+const serverId = '859707595191484418' // ID Aplikasi Discord Anda
+const discordOAuthUrl = 'https://discord.com/api/oauth2/authorize?client_id=1159761094932439050&redirect_uri=http%3A%2F%2Flocalhost%3A5173%2Flogin%2Fredirect-uri&response_type=token&scope=guilds%20identify%20email'
 let accessToken = ''
 
 const loginBtnHandler = () => {
@@ -52,22 +47,6 @@ const checkMembershipServer = (token) => {
       console.log('apakah dia member', isMember);
     });
 }
-
-onMount(() => {
-  const url = window.location.href;
-  let token = "";
-  
-  if (url.includes('access_token')) {
-    token = url.split('#')[1].split('&')[1].split('=')[1];
-  }
-
-
-  if (token) {
-    localStorage.setItem('accessToken', token);
-    window.opener.postMessage({ accessToken: token });
-    window.close();
-  }
-});
 
 </script>
 
